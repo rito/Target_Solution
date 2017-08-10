@@ -1,2 +1,7 @@
-# Target_Solution
-Target Solution - Ideal Solution for Every Projects
+# Arquitetura-Alvo
+Arquitetura Alvo
+
+3 different independent layers
+
+
+![Arquitetura Alvo](./Arquitetura_Alvo.png)
