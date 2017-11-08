@@ -1,5 +1,7 @@
 # Target Solution
 
+## Conceito teórico / Theorical Concept
+
 3 different independent layers
 
 
@@ -14,3 +16,30 @@ Basically we have a first layer (VIEW), which connects to a layer of Controller 
 
 Descrição: (PT)
 Basicamente temos uma primeira camada (VIEW), que se conecta a uma camada de Controller (API), que se conecta a uma terceira camada (API) que esta última sim, fará a conexão com as bases de dados, APIs externas, etc. São 3 projetos independentes, sendo 1 View e 2 APIs. Porém a única particularidade entre as soluções, é que além de uma comunicação REST API entre as camadas que é o mais comum que vemos na internet, é que precisaremos em alguns casos, a comunicação via Socket.io, seja entre as APIs ou entre a camada View e a API, permitindo que, caso uma informação seja alterada na base de dados, esta informação seja atualizada na View sem a necessidade de refresh ou requisição pelo browser.
+
+
+# Arquitetura Base para projetos (Código-fonte)
+
+##Frontend:
+
+Quasar Framework: Framework em VUE 2, com recursos para Web, Android, iOS e Desktop (Windows, Linux e Mac)
+
+pasta frontend
+
+```
+cd frontend
+npm install
+quasar dev
+```
+
+##Backend:
+
+SailsJS Framework (semm frontend). API com suporte Restful e Socket.io
+
+pasta api
+
+```
+cd api
+npm install
+sails lift
+```
